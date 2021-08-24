@@ -1,0 +1,117 @@
+:root {
+  --btn-color: #887a76;
+  --bg-color: #211a19;
+  --a-color: #ccc;
+}
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+body {
+  background-color: var(--bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--a-color);
+}
+a:hover {
+  color: var(--btn-color);
+}
+a:active {
+  color: var(--a-color);
+}
+
+h1,
+p,
+label,
+.btn {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+input::placeholder {
+  text-transform: lowercase;
+  color: #ccc;
+}
+h1 {
+  font-family: 'Crimson Text', serif;
+  letter-spacing: 0.125rem;
+}
+
+input,
+input:focus {
+  outline: none;
+}
+.btn:hover {
+  background-color: var(--btn-color);
+  border-color: var(--btn-color);
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+}
+
+#search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(62, 38, 32, 0.5), rgba(0, 0, 0, 0.8)),
+    url(drum.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+#search form {
+  text-align: center;
+}
+#search .form-control {
+  margin: 0.5rem;
+}
+#search form .btn {
+  margin: 0.5rem 0.5rem 0;
+}
+
+#display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+#display .box h5,
+#display .box h6,
+#display .box p {
+  font-family: 'Crimson Text', serif;
+}
+
+#display .box p {
+  margin-top: 1rem;
+}
+
+#display .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+#display .box button {
+  display: block;
+  margin: 0.5rem auto 0;
+}
+
+#display .box button a {
+  color: #fff;
+}
+
+img {
+  padding: 20px;
+}
+
+@media (max-width: 500px) {
+  img {
+    padding: 0px;
+  }
+}

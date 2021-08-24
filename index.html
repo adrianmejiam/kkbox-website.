@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KKBOX LIBRARY</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+  <div id="search">
+    <h1 class="mt-5">KKBOX library</h1>
+    <form>
+      <label for="q" >Search Term</label>
+      <input type="search" class="form-control" name="" id="q" placeholder="tohoshinki" required>
+      <input class="form-check-input" type="radio" name="q-type" id="track" required>
+      <label for="track">track</label>
+      <input class="form-check-input" type="radio" name="q-type" id="album" required>
+      <label for="album">album</label>
+      <input class="form-check-input" type="radio" name="q-type" id="artist" required>
+      <label for="artist">artist</label>
+      <input class="form-check-input" type="radio" name="q-type" id="playlist" required>
+      <label for="playlist">playlist</label>
+      <br><br>
+      <button id="prev" class="btn btn-outline-light" disabled>prev</button>
+      <input type="submit" value="Search" id="btn" class="btn btn-outline-light">
+      <button id="next" class="btn btn-outline-light" disabled>next</button>
+    </form>
+    <div class="footer py-4">
+      <p>&copy; Yeh, Yun-Chih 2021<br>
+        Source : <a target="_blank" href="https://docs-zhtw.kkbox.codes/#overview--step-1-%E5%BB%BA%E7%AB%8B-app-%E4%B8%A6%E7%8D%B2%E5%BE%97-client-id-%E5%8F%8A-client-secret">KKBOX OpenAPI</a>
+        <a target="_blank" href="https://unsplash.com/photos/MjIMc6uhwrE">Unsplash</a>
+      </p>
+    </div>
+  </div>
+  <div id="display" class="container"></div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
