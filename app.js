@@ -19,7 +19,7 @@ let res_limit = 20
 const getKKbox = async (URL) => {
   try {    
     qType = document.querySelector('[name="q-type"]:checked')
-    const config = { headers: { 'Authorization': 'Bearer q8kbeM6YoYGThrqhxlgjfw==' } }
+    const config = { headers: { 'Authorization': 'Bearer djoj76ftUDDCOioiNGrLYA==' } }
     const res = await axios.get(URL, config)
     const result = res.data[`${qType.id}s`]
     return result
